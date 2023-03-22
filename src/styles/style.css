@@ -81,7 +81,6 @@ header {
     position: relative;
     width: 150px;
     height: 180px;
-    // background: rgba(73, 87, 149, 0.197154);
     background: rgba(73, 87, 149, 0.2);
     border: 1px solid #495795;
     border-radius: 19px;
@@ -193,7 +192,7 @@ only screen and (min-device-pixel-ratio : 3) {
     }
 }
 
-//iPhone SE
+/* iPhone SE */
 @media (width: 320px) {
     body {
         padding-top: 10px;
@@ -230,7 +229,7 @@ only screen and (min-device-pixel-ratio : 3) {
     }
 }
 
-//iPhone 8+
+/* iPhone 8+ */
 @media (width: 414px) {
     body {
         padding-top: 30px;
