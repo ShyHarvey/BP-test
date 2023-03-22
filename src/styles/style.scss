@@ -1,0 +1,264 @@
+@import '../../node_modules/normalize.css/normalize.css';
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+
+body {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    overflow: hidden;
+    background-image: url(../img/bg.png);
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    font-family: 'SF Pro Display', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main {
+    margin-top: 85px;
+}
+
+.main>h1 {
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.closeImg {
+    top: 10%;
+    left: 10%;
+}
+
+.closeBtn {
+    background: none;
+    border: none;
+    margin-left: 20px;
+}
+
+.restore {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-size: 13px;
+    margin-right: 20px;
+}
+
+.features {
+    color: #FFFFFF;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.684495);
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 220px;
+    margin: 0 auto;
+}
+
+.feature {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.feature>p {
+    margin: 0;
+    width: fit-content;
+    padding-left: 6px;
+}
+
+.cards {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    color: #FFFFFF;
+}
+
+.card {
+    position: relative;
+    width: 150px;
+    height: 180px;
+    // background: rgba(73, 87, 149, 0.197154);
+    background: rgba(73, 87, 149, 0.2);
+    border: 1px solid #495795;
+    border-radius: 19px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transform: scale(0.9);
+    opacity: 0.5;
+}
+
+.badge {
+    background-color: #DB0000;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(3px, -3px);
+    text-align: center;
+}
+
+.badge strong {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    font-size: 14px;
+}
+
+.card2 {
+    background-color: none;
+    border: none;
+    background-image: url(../img//shape-2.svg);
+    background-size: cover;
+}
+
+.activeCard {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.card p {
+    margin: 0;
+}
+
+.price strong {
+    font-size: 24px;
+}
+
+.lable {
+    background: #495795;
+    transform: scale(1.07);
+}
+
+.pricePerMonth {
+    font-size: 16px;
+}
+
+.continueBtn {
+    display: block;
+    width: 280px;
+    height: 54px;
+    margin: 0 auto;
+    background: linear-gradient(270deg, #1987FF 0%, #19CCFF 100%);
+    border-radius: 30px;
+    font-size: 17px;
+    line-height: 17px;
+    color: #FFFFFF;
+    border: none;
+
+}
+
+.footer {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #BDC0D0;
+}
+
+.message {
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+}
+
+.links a {
+    color: #BDC0D0;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio : 2),
+only screen and (min-device-pixel-ratio : 2) {
+
+    body {
+        background-image: url('../img/bg@2x.png');
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio : 3),
+only screen and (min-device-pixel-ratio : 3) {
+
+    body {
+        background-image: url('../img/bg@3x.png');
+    }
+}
+
+//iPhone SE
+@media (width: 320px) {
+    body {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .main {
+        margin-top: 10px
+    }
+
+    .main>h1 {
+        font-size: 24px;
+    }
+
+    .lable {
+        font-size: 17px;
+    }
+
+    .cards {
+        padding: 5px 30px;
+    }
+
+    .card {
+        width: 120px;
+        height: 150px;
+    }
+
+    .lable {
+        font-size: 14px;
+    }
+
+    .footer {
+        font-size: 14px;
+    }
+}
+
+//iPhone 8+
+@media (width: 414px) {
+    body {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    .main {
+        margin-top: 50px
+    }
+
+    .main>h1 {
+        font-size: 34px;
+    }
+
+    .cards {
+        padding: 20px 40px;
+    }
+
+    .card {
+        width: 150px;
+        height: 180px;
+    }
+
+    .lable {
+        font-size: 16px;
+    }
+
+    .footer {
+        font-size: 14px;
+    }
+}

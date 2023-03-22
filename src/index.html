@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <title>BP-test</title>
+</head>
+
+<body>
+  <header>
+    <a href="#" class="closeBtn">
+      <img class="closeImg" src="./img/close.svg" alt="close">
+    </a>
+    <a class="restore" href="#">
+      Restore
+    </a>
+  </header>
+  <main class="main">
+    <h1 class="title unlimitedAccess">Unlimited Access<br /> to All Features</h1>
+    <div class="features">
+      <div class="feature">
+        <img width="26" height="15" src="./img/infinity.svg">
+        <p class="unlimitedDocuments">Unlimited documents</p>
+      </div>
+      <div class="feature">
+        <img src="./img/export@1,5x.svg">
+        <!-- почему-то для следующей строки перевод не предоставили, поэтому она всегда на английском -->
+        <p class="export">Export to clouds</p>
+      </div>
+      <div class="feature">
+        <img width="21" height="21" src="./img/no_ads@1,5x.svg">
+        <p class="orc textRecognition">Text recognition (OCR)</p>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card activeCard">
+        <p><strong class="monthly">Monthly</strong></p>
+        <div>
+          <p class="price priceInMonth"><strong>$9.99</strong> <br />per month</p>
+
+        </div>
+        <p class="lable freeDays"><strong class="freeDays">3 DAYS FREE!</strong></p>
+        <p class="pricePerMonth">$9.99/month</p>
+      </div>
+      <div class="card card2">
+        <div class="badge"><strong>-83%</strong></div>
+        <p><strong class="annually">Annually</strong></p>
+        <div>
+          <p class="price perYear"><strong>$19.99</strong> <br />per year</p>
+        </div>
+        <p class="lable mostPopular"><strong>MOST POPULAR</strong></p>
+        <p class="pricePerMonthForYear">$1.66 month</p>
+      </div>
+    </div>
+    <button class="continueBtn">Continue</button>
+
+  </main>
+  <footer class="footer">
+    <p class="message">Auto-rewable. Cancel anytime</p>
+    <div class="links">
+      <a class="term" href="#">Terms of Use</a>
+      <a class="policy" href="#">Privacy Policy</a>
+    </div>
+  </footer>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
